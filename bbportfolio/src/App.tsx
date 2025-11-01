@@ -1,16 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Stack, Typography } from '@mui/material';
+import WebsiteRouter from './website-router';
 
 function App() {
   return (
     <div className="App">
-      <Stack >
-        <Typography>
-          Page to come soon.
-        </Typography>
-      </Stack>
+      <WebsiteRouter />
     </div>
   );
 }
