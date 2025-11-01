@@ -26,15 +26,17 @@ const HomePage: React.FC = () => {
                 Welcome to my portfolio website!
                 <br />
                 Explore my projects, skills, and experience below.
+                <br />
+                (Website still in development)
             </Typography>
             <Stack direction="row" spacing={2} sx={{ mt: 5 }}>
-                <Button variant="contained" color="primary" href="#projects">
+                <Button variant="contained" color="primary" href="#projects" disabled={true}>
                     Projects
                 </Button>
-                <Button variant="outlined" color="primary" href="#about">
+                <Button variant="outlined" color="primary" href="#about" disabled={true}>
                     About
                 </Button>
-                <Button variant="outlined" color="primary" href="#contact">
+                <Button variant="outlined" color="primary" href="#contact" disabled={true}>
                     Contact
                 </Button>
             </Stack>
