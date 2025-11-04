@@ -39,18 +39,15 @@ const BlogPage: React.FC = () => {
         <Box
             className="homepage-container"
             sx={{
-                textAlign: "center",
-                py: 8,
-                px: 2,
-                minHeight: "80vh",
+                minHeight: "100vh",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: "top",
             }}
         >
-            <Typography variant="h2" component="h1" gutterBottom>
-                Blog
+            <Typography variant="h3">
+                BB Blog
             </Typography>
             <BlogEntry entry={entry} />
         </Box>
