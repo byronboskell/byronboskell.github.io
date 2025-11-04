@@ -56,3 +56,5 @@ const BlogPage: React.FC = () => {
         </Box>
     )
 }
+
+export default BlogPage
