@@ -3,7 +3,8 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/error-page";
 import HomePage from "./pages/home-page";
 import BlogPage from "./pages/blog-page";
-import PageLayout from "./components/page-layout";
+import ContactPage from "./pages/contact-page";
+import AboutPage from "./pages/about-page";
 
 
 
@@ -27,12 +28,12 @@ const WebsiteRouter = () => {
         },
         {
             path: "/about",
-            element: <PageLayout />,
+            element: <AboutPage />,
             errorElement: <ErrorPage />,
         },
         {
             path: "/contact",
-            element: <PageLayout />,
+            element: <ContactPage />,
             errorElement: <ErrorPage />,
         }
     ],
