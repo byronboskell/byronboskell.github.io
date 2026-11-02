@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "./pages/error-page";
 import HomePage from "./pages/home-page";
@@ -9,7 +9,7 @@ import PageLayout from "./components/page-layout";
 
 const WebsiteRouter = () => {
 
-    const browserRouter = createBrowserRouter([
+    const browserRouter = createHashRouter([
         {
             path: "/",
             element: <HomePage />,
