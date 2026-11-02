@@ -1,31 +1,16 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
-import SiteNavigation from "../components/site-navigation";
+import { Stack, Typography } from "@mui/material";
+import PageLayout from "../components/page-layout";
 
 const HomePage: React.FC = () => {
     return (
-        <Stack>
-            <SiteNavigation />
-            <Box
-                className="homepage-container"
-                sx={{
-                    textAlign: "center",
-                    py: 8,
-                    px: 2,
-                    minHeight: "80vh",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                }}
-            >
-
-
+        <PageLayout>
+            <Stack>
                 <Typography variant="h2" component="h1" gutterBottom>
                     Byron Boskell
                 </Typography>
                 <Typography variant="h5" component="h2" color="text.secondary" gutterBottom>
-                    Web Developer & Designer
+                    Software Developer and Video Game Creator
                 </Typography>
                 <Typography variant="body1" sx={{ mt: 2 }}>
                     Welcome to my portfolio website!
@@ -34,8 +19,8 @@ const HomePage: React.FC = () => {
                     <br />
                     (Website still in development)
                 </Typography>
-            </Box>
-        </Stack>
+            </Stack>
+        </PageLayout>
     );
 };
 

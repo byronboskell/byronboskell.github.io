@@ -3,6 +3,7 @@ import React from "react";
 import { useSearchParams } from "react-router-dom";
 import { blogData } from "../blog-content/blog-entries"
 import BlogEntry from "../components/blog-entry";
+import PageLayout from "../components/page-layout";
 
 const parseBlogNumber = (searchParams: string | null, max?: number): number => {
 
@@ -36,21 +37,23 @@ const BlogPage: React.FC = () => {
     const entry = blogData[blogNumber]
 
     return (
-        <Box
-            className="homepage-container"
-            sx={{
-                minHeight: "100vh",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "top",
-            }}
-        >
-            <Typography variant="h3">
-                BB Blog
-            </Typography>
-            <BlogEntry entry={entry} />
-        </Box>
+        <PageLayout>
+            <Box
+                className="homepage-container"
+                sx={{
+                    minHeight: "100vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "top",
+                }}
+            >
+                <Typography variant="h3">
+                    BB Blog
+                </Typography>
+                <BlogEntry entry={entry} />
+            </Box>
+        </PageLayout>
     )
 }
 
