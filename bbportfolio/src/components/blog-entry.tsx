@@ -1,6 +1,6 @@
 import React from "react";
-import { BlogEntryData } from "../blog-content/blog-entries";
-import { Card, CardContent, Stack, Typography } from "@mui/material";
+import { type BlogEntryData } from "../blog-content/blog-entries";
+import { Stack, Typography } from "@mui/material";
 
 interface BlogEntryProps {
     entry: BlogEntryData

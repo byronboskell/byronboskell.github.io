@@ -31,7 +31,7 @@ const BlogPage: React.FC = () => {
 
     const [searchParams] = useSearchParams();
     const [blogNumber] = React.useState<number>(parseBlogNumber(searchParams.get("index"), blogData.length))
-    const [page] = React.useState<number>(parseBlogNumber(searchParams.get("page")))
+    //const [page] = React.useState<number>(parseBlogNumber(searchParams.get("page")))
 
     const entry = blogData[blogNumber]
 
