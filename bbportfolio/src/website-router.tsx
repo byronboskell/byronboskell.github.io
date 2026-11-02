@@ -15,8 +15,23 @@ const WebsiteRouter = () => {
             errorElement: <ErrorPage />,
         },
         {
+            path: "/home",
+            element: <HomePage />,
+            errorElement: <ErrorPage />,
+        },
+        {
             path: "/blog",
             element: <BlogPage />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/about",
+            element: <></>,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/contact",
+            element: <></>,
             errorElement: <ErrorPage />,
         }
     ],
