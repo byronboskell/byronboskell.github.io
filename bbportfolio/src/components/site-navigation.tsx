@@ -1,6 +1,7 @@
 import React from "react";
+import { alpha } from "@mui/material/styles";
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const links = [
     { label: "Home", to: "/home" },
@@ -9,28 +10,59 @@ const links = [
     { label: "Contact", to: "/contact" },
 ];
 
-const SiteNavigation: React.FC = () => (
-    <AppBar position="static" color="default" elevation={1} component="nav" aria-label="Main navigation">
-        <Toolbar sx={{ justifyContent: "space-between", gap: 2, flexWrap: "wrap" }}>
-            <Typography
-                component={Link}
-                to="/home"
-                variant="h6"
-                color="inherit"
-                sx={{ textDecoration: "none", fontWeight: 700 }}
-            >
-                Byron Boskell
-            </Typography>
+const SiteNavigation: React.FC = () => {
+    const { pathname } = useLocation();
 
-            <Box sx={{ display: "flex", gap: 1, overflowX: "auto" }}>
-                {links.map(({ label, to }) => (
-                    <Button key={to} component={Link} to={to} color="inherit">
-                        {label}
-                    </Button>
-                ))}
-            </Box>
-        </Toolbar>
-    </AppBar>
-);
+    return (
+        <AppBar
+            component="nav"
+            aria-label="Main navigation"
+            position="static"
+            color="primary"
+            elevation={0}
+        >
+            <Toolbar sx={{ minHeight: 72, justifyContent: "space-between", gap: 2, flexWrap: "wrap" }}>
+                <Typography
+                    component={Link}
+                    to="/home"
+                    variant="h6"
+                    color="inherit"
+                    sx={{ textDecoration: "none", fontWeight: 700, letterSpacing: 0.3 }}
+                >
+                    Byron Boskell
+                </Typography>
+
+                <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
+                    {links.map(({ label, to }) => {
+                        const isActive = pathname === to;
+
+                        return (
+                            <Button
+                                key={to}
+                                component={Link}
+                                to={to}
+                                color="inherit"
+                                aria-current={isActive ? "page" : undefined}
+                                sx={(theme) => ({
+                                    borderRadius: 2,
+                                    fontWeight: isActive ? 700 : 500,
+                                    textTransform: "none",
+                                    bgcolor: isActive
+                                        ? alpha(theme.palette.primary.contrastText, 0.16)
+                                        : "transparent",
+                                    "&:hover": {
+                                        bgcolor: alpha(theme.palette.primary.contrastText, 0.12),
+                                    },
+                                })}
+                            >
+                                {label}
+                            </Button>
+                        );
+                    })}
+                </Box>
+            </Toolbar>
+        </AppBar>
+    );
+};
 
 export default SiteNavigation;
