@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material';
 import { theme } from "./theme/index";
 
 import WebsiteRouter from './website-router';
+import { ThemeModeProvider } from './context/theme-mode-context';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <WebsiteRouter />
+      <ThemeModeProvider>
+        <WebsiteRouter />
+      </ThemeModeProvider>
     </ThemeProvider>
   </React.StrictMode>
 )

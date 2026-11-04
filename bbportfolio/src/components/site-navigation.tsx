@@ -2,6 +2,7 @@ import React from "react";
 import { alpha } from "@mui/material/styles";
 import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
+import { ThemeModeToggle } from "./theme-mode-toggle";
 
 const links = [
     { label: "Home", to: "/home" },
@@ -60,6 +61,7 @@ const SiteNavigation: React.FC = () => {
                         );
                     })}
                 </Box>
+                <ThemeModeToggle />
             </Toolbar>
         </AppBar>
     );
