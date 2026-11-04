@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
+import InfoPanel from "../components/info-panel";
 
 const HomePage: React.FC = () => (
     <PageLayout>
@@ -8,7 +9,7 @@ const HomePage: React.FC = () => (
             <Card component="article" variant="outlined">
                 <CardContent sx={{ p: { xs: 3, md: 5 } }}>
                     <Typography variant="overline" color="primary">
-                        About me
+                        Major Projects
                     </Typography>
                     <Typography variant="h2" component="h1" gutterBottom>
                         Byron Boskell
@@ -27,70 +28,62 @@ const HomePage: React.FC = () => (
                     alignItems: "start",
                 }}
             >
-                <Card component="article" variant="outlined">
-                    <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-                        <Typography variant="h4" component="h2" gutterBottom>
-                            My background
-                        </Typography>
-                        <Divider sx={{ mb: 3 }} />
+                <Stack>
+                    <Card component="article" variant="outlined">
+                        <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                            <Typography variant="h4" component="h2" gutterBottom>
+                                Lords of Illic
+                            </Typography>
+                            <Divider sx={{ mb: 3 }} />
 
-                        <Stack spacing={2}>
-                            <Typography color="text.secondary">
-                                I earned an Advanced Diploma of Professional Game Development from
-                                the Academy of Interactive Entertainment in 2019.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                After that, I spent two years working on my own video game, Lords
-                                of Illic.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                I have worked at Insight via Artificial Intelligence (IVAI) for
-                                almost five years.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                Over the last few years, I have expanded my skills beyond game
-                                development, adapting to a range of platforms and programming
-                                languages.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                My projects have helped me grow my software engineering skills.
-                                I have also spent time learning from books and videos to continue
-                                developing those skills.
-                            </Typography>
-                        </Stack>
-                    </CardContent>
-                </Card>
+                            <Stack spacing={2}>
+                                <Typography color="text.secondary">
+                                    A personal game project I undertook while I was studying, but I continued during my job search and during my employment at IVAI.
+                                </Typography>
+                                <Typography color="text.secondary">
+                                    A strategy game made in Unity.
+                                </Typography>
+                            </Stack>
+                        </CardContent>
+                    </Card>
 
-                <Stack component="aside" spacing={3}>
-                    <Card variant="outlined">
-                        <CardContent sx={{ p: 3 }}>
-                            <Typography variant="h6" component="h2" gutterBottom>
-                                At a glance
+                    <Card component="article" variant="outlined">
+                        <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                            <Typography variant="h4" component="h2" gutterBottom>
+                                Aboriginal Health Project
                             </Typography>
-                            <Divider sx={{ mb: 2 }} />
-                            <Stack spacing={1.5}>
-                                <Box>
-                                    <Typography variant="caption" color="text.secondary">
-                                        Education
-                                    </Typography>
-                                    <Typography>Advanced Diploma, Professional Game Development</Typography>
-                                </Box>
-                                <Box>
-                                    <Typography variant="caption" color="text.secondary">
-                                        Interests
-                                    </Typography>
-                                    <Typography>Software development and video games</Typography>
-                                </Box>
-                                <Box>
-                                    <Typography variant="caption" color="text.secondary">
-                                        Current role
-                                    </Typography>
-                                    <Typography>IVAI</Typography>
-                                </Box>
+                            <Divider sx={{ mb: 3 }} />
+
+                            <Stack spacing={2}>
+                                <Typography color="text.secondary">
+                                    The first project I undertook when working for Insight via Artificial Intelligence.
+                                </Typography>
+                                <Typography color="text.secondary">
+                                    A unity based VR experience which helps trains nurses to diagnose diabetic foot complications.
+                                </Typography>
+                            </Stack>
+                        </CardContent>
+                    </Card>
+
+                    <Card component="article" variant="outlined">
+                        <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                            <Typography variant="h4" component="h2" gutterBottom>
+                                Augmented Reality MRRF Project
+                            </Typography>
+                            <Divider sx={{ mb: 3 }} />
+
+                            <Stack spacing={2}>
+                                <Typography color="text.secondary">
+                                    A web-based telemedicine platform to improve outcomes for patients with diabetic foot complications.
+                                </Typography>
+                                <Typography color="text.secondary">
+                                    During this project I had to transition my skills from Unity to full stack development making use of typescript, react and aws services.
+                                </Typography>
                             </Stack>
                         </CardContent>
                     </Card>
                 </Stack>
+                <InfoPanel />
             </Box>
         </Stack>
     </PageLayout>
