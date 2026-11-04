@@ -1,11 +1,24 @@
 import React, { type PropsWithChildren } from "react";
-import { Box } from "@mui/material";
+import { alpha } from "@mui/material/styles";
+import { Box, Stack } from "@mui/material";
 import SiteNavigation from "./site-navigation";
 
 const PageLayout: React.FC<PropsWithChildren> = ({ children }) => (
-    <>
+    <Box
+        sx={(theme) => ({
+            minHeight: "100vh",
+            background: `
+                radial-gradient(
+                    circle at 10% 10%,
+                    ${alpha(theme.palette.primary.main, 0.5)},
+                    transparent 35%
+                ),
+                ${theme.palette.background.default}
+            `,
+        })}
+    >
         <SiteNavigation />
-        <Box
+        <Stack
             component="main"
             sx={{
                 width: "100%",
@@ -16,8 +29,8 @@ const PageLayout: React.FC<PropsWithChildren> = ({ children }) => (
             }}
         >
             {children}
-        </Box>
-    </>
+        </Stack>
+    </Box>
 );
 
 export default PageLayout;
