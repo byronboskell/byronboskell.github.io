@@ -4,9 +4,10 @@ const themeOptions: ThemeOptions = {
   palette: {
     mode: 'light',
     primary: {
-      main: '#1E88E5',
-      light: '#42A5F5',
-      dark: '#1565C0'
+      main: "#1565C0",
+      light: "#1976D2",
+      dark: "#0D47A1",
+      contrastText: "#FFFFFF",
     },
     secondary: {
       main: '#424242',
@@ -34,8 +35,8 @@ const themeOptions: ThemeOptions = {
       dark: '#388e3c'
     },
     background: {
-      default: '#ffffff',
-      paper: '#fafafa'
+      default: "#F4F7FB",
+      paper: "#FFFFFF",
     },
     text: {
       primary: 'rgba(0, 0, 0, 0.87)',
