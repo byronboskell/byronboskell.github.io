@@ -2,34 +2,50 @@ import React, {
     createContext,
     useCallback,
     useMemo,
-    useState,
     type PropsWithChildren,
 } from "react";
 import { CssBaseline } from "@mui/material";
-import { createTheme, ThemeProvider, type PaletteMode } from "@mui/material/styles";
+import {
+    ThemeProvider,
+    useColorScheme,
+    type PaletteMode,
+} from "@mui/material/styles";
+import { theme } from "../theme";
 
 type ThemeModeContextValue = {
     mode: PaletteMode;
     toggleMode: () => void;
 };
 
-export const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(undefined);
+export const ThemeModeContext = createContext<ThemeModeContextValue | undefined>(
+    undefined
+);
 
-export const ThemeModeProvider: React.FC<PropsWithChildren> = ({ children }) => {
-    const [mode, setMode] = useState<PaletteMode>("light");
+const ThemeModeBridge: React.FC<PropsWithChildren> = ({ children }) => {
+    const { mode, systemMode, setMode } = useColorScheme();
+
+    const effectiveMode = mode === "system" ? systemMode : mode;
+    const activeMode: PaletteMode = effectiveMode === "dark" ? "dark" : "light";
 
     const toggleMode = useCallback(() => {
-        setMode((currentMode) => (currentMode === "light" ? "dark" : "light"));
-    }, []);
+        setMode(activeMode === "light" ? "dark" : "light");
+    }, [activeMode, setMode]);
 
-    const theme = useMemo(() => createTheme({ palette: { mode } }), [mode]);
+    const contextValue = useMemo(
+        () => ({ mode: activeMode, toggleMode }),
+        [activeMode, toggleMode]
+    );
 
     return (
-        <ThemeModeContext.Provider value={{ mode, toggleMode }}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                {children}
-            </ThemeProvider>
+        <ThemeModeContext.Provider value={contextValue}>
+            {children}
         </ThemeModeContext.Provider>
     );
 };
+
+export const ThemeModeProvider: React.FC<PropsWithChildren> = ({ children }) => (
+    <ThemeProvider theme={theme} defaultMode="system">
+        <CssBaseline />
+        <ThemeModeBridge>{children}</ThemeModeBridge>
+    </ThemeProvider>
+);
