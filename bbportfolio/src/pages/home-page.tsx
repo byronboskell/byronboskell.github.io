@@ -1,20 +1,11 @@
 import React from "react";
-import { alpha } from "@mui/material/styles";
 import { Box, Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 
 const HomePage: React.FC = () => (
     <PageLayout>
         <Stack spacing={3}>
-            <Card
-                sx={(theme) => ({
-                    border: `1px solid ${alpha(theme.palette.primary.main, 0.18)}`,
-                    background: `linear-gradient(135deg, ${alpha(
-                        theme.palette.primary.main,
-                        0.1
-                    )}, ${theme.palette.background.paper} 70%)`,
-                })}
-            >
+            <Card component="article" variant="outlined">
                 <CardContent sx={{ p: { xs: 3, md: 5 } }}>
                     <Typography variant="overline" color="primary">
                         About me
