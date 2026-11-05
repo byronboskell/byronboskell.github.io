@@ -1,14 +1,40 @@
 import React from "react";
 import { alpha } from "@mui/material/styles";
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeModeToggle } from "./theme-mode-toggle";
+import LinkDropDown from "./link-dropdown";
+import SiteNavigationButton from "./site-navigation-button";
 
-const links = [
-    { label: "Home", to: "/home" },
-    { label: "About", to: "/about" },
-    { label: "Blog", to: "/blog" },
-    { label: "Contact", to: "/contact" },
+export interface LinkValues {
+    label: string, to: string
+}
+
+
+const links: LinkValues[][] = [
+    [
+        { label: "Home", to: "/home" }
+    ],
+    [
+        { label: "Lords of Illic", to: "/projects/illic" },
+        { label: "Aboriginal Health Project", to: "/projects/ahp" },
+        { label: "Augmented Reality MRRF", to: "/projects/telehealth" },
+    ],
+    [
+        { label: "About", to: "/about" }
+    ],
+    [
+        { label: "Blog", to: "/blog" }
+    ],
+    [
+        { label: "Contact", to: "/contact" }
+    ],
+];
+
+const projectLinks: LinkValues[] = [
+    { label: "Lords of Illic", to: "/projects/illic" },
+    { label: "Aboriginal Health Project", to: "/projects/ahp" },
+    { label: "Augmented Reality MRRF", to: "/projects/telehealth" },
 ];
 
 const SiteNavigation: React.FC = () => {
@@ -41,32 +67,16 @@ const SiteNavigation: React.FC = () => {
                 </Typography>
 
                 <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
-                    {links.map(({ label, to }) => {
-                        const isActive = pathname === to;
+                    {links.map((subLinks) => {
+                        if (subLinks.length == 1) {
+                            const isActive = pathname === subLinks[0].to;
 
-                        return (
-                            <Button
-                                key={to}
-                                component={Link}
-                                to={to}
-                                color="inherit"
-                                aria-current={isActive ? "page" : undefined}
-                                sx={(theme) => ({
-                                    borderRadius: 2,
-                                    fontWeight: isActive ? 700 : 500,
-                                    textTransform: "none",
-                                    bgcolor: isActive
-                                        ? alpha(theme.palette.primary.contrastText, 0.16)
-                                        : "transparent",
-                                    "&:hover": {
-                                        bgcolor: alpha(theme.palette.primary.contrastText, 0.12),
-                                    },
-                                })}
-                            >
-                                {label}
-                            </Button>
-                        );
+                            return <SiteNavigationButton link={subLinks[0]} isActive={isActive} />
+                        }
+
+                        return <LinkDropDown links={projectLinks} />
                     })}
+
                 </Box>
                 <ThemeModeToggle />
             </Toolbar>
