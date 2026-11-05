@@ -10,7 +10,7 @@ import {
     useColorScheme,
     type PaletteMode,
 } from "@mui/material/styles";
-import { theme } from "../theme";
+import { theme } from "../theme/theme";
 
 type ThemeModeContextValue = {
     mode: PaletteMode;
