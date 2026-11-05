@@ -5,6 +5,7 @@ import HomePage from "./pages/home-page";
 import BlogPage from "./pages/blog-page";
 import ContactPage from "./pages/contact-page";
 import AboutPage from "./pages/about-page";
+import PageLayout from "./components/page-layout";
 
 
 
@@ -34,6 +35,26 @@ const WebsiteRouter = () => {
         {
             path: "/contact",
             element: <ContactPage />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/projects",
+            element: <HomePage />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/projects/illic",
+            element: <PageLayout />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/projects/ahp",
+            element: <PageLayout />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/projects/telehealth",
+            element: <PageLayout />,
             errorElement: <ErrorPage />,
         }
     ],
