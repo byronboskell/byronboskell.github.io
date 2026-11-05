@@ -11,7 +11,7 @@ const PageLayout: React.FC<PropsWithChildren> = ({ children }) => (
             backgroundImage: `
                 radial-gradient(
                     circle at 10% 10%,
-                    ${alpha(theme.palette.primary.main, 0.5)},
+                    ${alpha(theme.palette.secondary.main, 0.2)},
                     transparent 35%
                 ),
                 linear-gradient(
