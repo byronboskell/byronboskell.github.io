@@ -68,10 +68,18 @@ const darkPalette: PaletteOptions = {
     main: "#B39DDB",
     contrastText: "#1A1020",
   },
-  error: { main: "#F28B82" },
-  warning: { main: "#FFCC80" },
-  info: { main: "#81D4FA" },
-  success: { main: "#A5D6A7" },
+  error: {
+    main: "#F28B82"
+  },
+  warning: {
+    main: "#FFCC80"
+  },
+  info: {
+    main: "#81D4FA"
+  },
+  success: {
+    main: "#A5D6A7"
+  },
   background: {
     default: "#101827",
     paper: "#182438",
