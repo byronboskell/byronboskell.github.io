@@ -24,14 +24,10 @@ export const ThemeModeToggle: React.FC = () => {
                     slotProps={{ input: { "aria-label": "Toggle dark mode" } }}
                     sx={(theme) => ({
                         "& .MuiSwitch-switchBase.Mui-checked": {
-                            color: mode === "dark"
-                                ? theme.palette.common.white
-                                : theme.palette.primary.main,
+                            color: theme.palette.common.white,
                         },
                         "& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track": {
-                            backgroundColor: mode === "dark"
-                                ? theme.palette.grey[500]
-                                : theme.palette.primary.main,
+                            backgroundColor: theme.palette.grey[500],
                             opacity: 1,
                         },
                     })}
