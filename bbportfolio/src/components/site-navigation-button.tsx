@@ -7,11 +7,13 @@ import type { LinkValues } from "./site-navigation";
 interface SiteNavigationButtonProps {
     link: LinkValues
     isActive: boolean
+    variant?: "contained" | "outlined" | "text" | undefined
 }
 
 const SiteNavigationButton: React.FC<SiteNavigationButtonProps> = ({
     link,
     isActive,
+    variant
 }) => {
 
     return (
@@ -21,6 +23,7 @@ const SiteNavigationButton: React.FC<SiteNavigationButtonProps> = ({
             to={link.to}
             color="inherit"
             aria-current={isActive ? "page" : undefined}
+            variant={variant}
             sx={(theme) => ({
                 borderRadius: 2,
                 fontWeight: isActive ? 700 : 500,

@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 import InfoPanel from "../components/info-panel";
+import SiteNavigationButton from "../components/site-navigation-button";
 
 const HomePage: React.FC = () => (
     <PageLayout>
@@ -38,11 +39,16 @@ const HomePage: React.FC = () => (
 
                             <Stack spacing={2}>
                                 <Typography color="text.secondary">
-                                    A personal game project I undertook while I was studying, but I continued during my job search and during my employment at IVAI.
+                                    An original game that I worked on for five years, alongside my studies, job searching and working at Insight via Artificial Intelligence.
                                 </Typography>
                                 <Typography color="text.secondary">
                                     A strategy game made in Unity.
                                 </Typography>
+                                <SiteNavigationButton
+                                    link={{ to: "/projects/ahp", label: "More Information" }}
+                                    isActive={false}
+                                    variant="outlined"
+                                />
                             </Stack>
                         </CardContent>
                     </Card>
@@ -59,8 +65,13 @@ const HomePage: React.FC = () => (
                                     The first project I undertook when working for Insight via Artificial Intelligence.
                                 </Typography>
                                 <Typography color="text.secondary">
-                                    A unity based VR experience which helps trains nurses to diagnose diabetic foot complications.
+                                    A Unity based VR experience which helps trains nurses to diagnose diabetic foot complications.
                                 </Typography>
+                                <SiteNavigationButton
+                                    link={{ to: "/projects/illic", label: "More Information" }}
+                                    isActive={false}
+                                    variant="outlined"
+                                />
                             </Stack>
                         </CardContent>
                     </Card>
@@ -79,6 +90,11 @@ const HomePage: React.FC = () => (
                                 <Typography color="text.secondary">
                                     During this project I had to transition my skills from Unity to full stack development making use of typescript, react and aws services.
                                 </Typography>
+                                <SiteNavigationButton
+                                    link={{ to: "/projects/telehealth", label: "More Information" }}
+                                    isActive={false}
+                                    variant="outlined"
+                                />
                             </Stack>
                         </CardContent>
                     </Card>
