@@ -2,11 +2,11 @@ import { createTheme, type PaletteOptions, type Theme, } from "@mui/material/sty
 
 const lightPalette: PaletteOptions = {
   primary: {
-    main: "#1a237e",
+    main: "#1565c0",
     contrastText: "#FFFFFF",
   },
   secondary: {
-    main: '#651fff',
+    main: '#b388ff',
   },
   error: {
     main: '#d32f2f',
