@@ -28,7 +28,7 @@ const HomePage: React.FC = () => (
                     alignItems: "start",
                 }}
             >
-                <Stack>
+                <Stack spacing={3}>
                     <Card component="article" variant="outlined">
                         <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                             <Typography variant="h4" component="h2" gutterBottom>
