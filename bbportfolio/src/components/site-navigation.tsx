@@ -21,6 +21,7 @@ const SiteNavigation: React.FC = () => {
             position="static"
             color="primary"
             elevation={0}
+            sx={{ bgcolor: "primary.main", color: "primary.contrastText" }}
         >
             <Toolbar sx={{ minHeight: 72, justifyContent: "space-between", gap: 2, flexWrap: "wrap" }}>
                 <Typography

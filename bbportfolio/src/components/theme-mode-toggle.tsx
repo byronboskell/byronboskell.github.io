@@ -21,7 +21,20 @@ export const ThemeModeToggle: React.FC = () => {
                 <Switch
                     checked={mode === "dark"}
                     onChange={toggleMode}
-                    inputProps={{ "aria-label": "Toggle dark mode" }}
+                    slotProps={{ input: { "aria-label": "Toggle dark mode" } }}
+                    sx={(theme) => ({
+                        "& .MuiSwitch-switchBase.Mui-checked": {
+                            color: mode === "dark"
+                                ? theme.palette.common.white
+                                : theme.palette.primary.main,
+                        },
+                        "& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track": {
+                            backgroundColor: mode === "dark"
+                                ? theme.palette.grey[500]
+                                : theme.palette.primary.main,
+                            opacity: 1,
+                        },
+                    })}
                 />
             }
         />
