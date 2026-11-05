@@ -27,7 +27,7 @@ const InfoPanel: React.FC = () => (
                         <Typography variant="caption" color="text.secondary">
                             Current role
                         </Typography>
-                        <Typography>IVAI</Typography>
+                        <Typography>Looking for work</Typography>
                     </Box>
                 </Stack>
             </CardContent>
