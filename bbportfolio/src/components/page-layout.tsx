@@ -7,14 +7,25 @@ const PageLayout: React.FC<PropsWithChildren> = ({ children }) => (
     <Box
         sx={(theme) => ({
             minHeight: "100vh",
-            background: `
+            backgroundColor: theme.palette.background.default,
+            backgroundImage: `
                 radial-gradient(
                     circle at 10% 10%,
                     ${alpha(theme.palette.primary.main, 0.5)},
                     transparent 35%
                 ),
-                ${theme.palette.background.default}
+                linear-gradient(
+                    ${alpha(theme.palette.text.primary, 0.06)} 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    ${alpha(theme.palette.text.primary, 0.06)} 1px,
+                    transparent 1px
+                )
             `,
+            backgroundSize: "auto, 32px 32px, 32px 32px",
+            backgroundRepeat: "no-repeat, repeat, repeat",
         })}
     >
         <SiteNavigation />
