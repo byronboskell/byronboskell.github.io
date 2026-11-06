@@ -23,7 +23,7 @@ const ClearCallPage: React.FC = () => {
                     <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                         <Stack spacing={2}>
                             <Typography variant="h6" component="p" color="text.secondary">
-                                Originally the project was going to use the HoloLens to facilitate the call. However as the project got underway it became clear that Microsoft had not developed the platform enough for our uses. The headset used Windows Subsystem for Android which it used did not support video calling libraries properly and during the project they stopped developing the Hololens toolkit.
+                                Originally the project was going to use the HoloLens to facilitate the call. However as the project got underway it became clear that Microsoft had not developed the platform enough for our uses. The headset used Windows Subsystem for Android which did not support video calling libraries properly. Furthermore during the project Microsoft stopped development of the Hololens toolkit for Unity entirely.
                             </Typography>
                             <Typography variant="h6" component="p" color="text.secondary">
                                 I researched alternatives and discovered that if we made use of Amazon Web Systems we could use of the Chime SDK to host video calls in the browser. We then found an alternative headset known as the Realware which we could use in concert with the browser.
