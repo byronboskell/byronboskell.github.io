@@ -13,7 +13,7 @@ export interface LinkValues {
 
 const links: LinkValues[][] = [
     [
-        { label: "Home", to: "/home" }
+        { label: "Home", to: "/projects" }
     ],
     [
         { label: "Lords of Illic", to: "/projects/illic" },
@@ -58,7 +58,7 @@ const SiteNavigation: React.FC = () => {
             <Toolbar sx={{ minHeight: 72, justifyContent: "space-between", gap: 2, flexWrap: "wrap" }}>
                 <Typography
                     component={Link}
-                    to="/home"
+                    to="/projects"
                     variant="h6"
                     color="inherit"
                     sx={{ textDecoration: "none", fontWeight: 700, letterSpacing: 0.3 }}
