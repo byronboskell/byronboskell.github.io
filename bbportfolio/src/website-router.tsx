@@ -5,7 +5,6 @@ import HomePage from "./pages/home-page";
 import BlogPage from "./pages/blog-page";
 import ContactPage from "./pages/contact-page";
 import AboutPage from "./pages/about-page";
-import PageLayout from "./components/page-layout";
 import IllicPage from "./pages/illic-page";
 import AHPPage from "./pages/ahp-page";
 import ClearCallPage from "./pages/clear-call-page";
