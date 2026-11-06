@@ -45,7 +45,7 @@ const HomePage: React.FC = () => (
                                     A strategy game made in Unity.
                                 </Typography>
                                 <SiteNavigationButton
-                                    link={{ to: "/projects/ahp", label: "More Information" }}
+                                    link={{ to: "/projects/illic", label: "More Information" }}
                                     isActive={false}
                                     variant="outlined"
                                 />
@@ -68,7 +68,7 @@ const HomePage: React.FC = () => (
                                     A Unity based VR experience which helps trains nurses to diagnose diabetic foot complications.
                                 </Typography>
                                 <SiteNavigationButton
-                                    link={{ to: "/projects/illic", label: "More Information" }}
+                                    link={{ to: "/projects/ahp", label: "More Information" }}
                                     isActive={false}
                                     variant="outlined"
                                 />
