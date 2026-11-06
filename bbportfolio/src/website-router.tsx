@@ -6,6 +6,9 @@ import BlogPage from "./pages/blog-page";
 import ContactPage from "./pages/contact-page";
 import AboutPage from "./pages/about-page";
 import PageLayout from "./components/page-layout";
+import IllicPage from "./pages/illic-page";
+import AHPPage from "./pages/ahp-page";
+import ClearCallPage from "./pages/clear-call-page";
 
 
 
@@ -44,17 +47,17 @@ const WebsiteRouter = () => {
         },
         {
             path: "/projects/illic",
-            element: <PageLayout />,
+            element: <IllicPage />,
             errorElement: <ErrorPage />,
         },
         {
             path: "/projects/ahp",
-            element: <PageLayout />,
+            element: <AHPPage />,
             errorElement: <ErrorPage />,
         },
         {
             path: "/projects/telehealth",
-            element: <PageLayout />,
+            element: <ClearCallPage />,
             errorElement: <ErrorPage />,
         }
     ],
