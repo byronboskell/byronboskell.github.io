@@ -1,17 +1,39 @@
 import React from "react";
-import { Stack, Typography } from "@mui/material";
+import { Card, CardContent, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 
 const AHPPage: React.FC = () => {
     return (
         <PageLayout>
-            <Stack>
-                <Typography variant="h2" component="h1" gutterBottom>
-                    Aboriginal Health Project
-                </Typography>
-                <Typography variant="body1" sx={{ mt: 2 }}>
-                    (Website still in development)
-                </Typography>
+            <Stack spacing={3}>
+                <Card component="article" variant="outlined">
+                    <CardContent sx={{ p: { xs: 3, md: 5 } }}>
+                        <Typography variant="overline" color="primary">
+                            Health Simulation
+                        </Typography>
+                        <Typography variant="h3" component="h1" gutterBottom>
+                            Aboriginal Health Project
+                        </Typography>
+                        <Typography variant="h6" component="p" color="text.secondary">
+                            A project to create a VR simulation which would train remote nurses to understand the warning signs of foot complications for aboriginal diabetic patients. The goal was to help reduce foot amputations by providing immersive training that could be brought to remote sites without the need for remote nurses to travel long distances.
+                        </Typography>
+                    </CardContent>
+                </Card>
+                <Card component="article" variant="outlined">
+                    <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+                        <Stack spacing={2}>
+                            <Typography variant="h6" component="p" color="text.secondary">
+                                When the project started I already had some experience with VR simulations thanks to my internship with SA Power Networks.
+                            </Typography>
+                            <Typography variant="h6" component="p" color="text.secondary">
+                                During my work at SA Power Networks I had the idea of creating a toolkit to provide most templates for sequential training steps in VR.
+                            </Typography>
+                            <Typography variant="h6" component="p" color="text.secondary">
+                                This was a particular appealing idea with the Aboriginal Health Project as if the VR Headset is already in the remote site it could be updated to provide additional scenarios for training. We never had the opportunity to do so, but I used the reusable toolkit for other VR simulations during my working at Insight via Artificial Intelligence.
+                            </Typography>
+                        </Stack>
+                    </CardContent>
+                </Card>
             </Stack>
         </PageLayout>
     );
