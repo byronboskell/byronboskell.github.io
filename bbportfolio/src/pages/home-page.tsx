@@ -79,7 +79,7 @@ const HomePage: React.FC = () => (
                     <Card component="article" variant="outlined">
                         <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                             <Typography variant="h4" component="h2" gutterBottom>
-                                Augmented Reality MRRF Project
+                                Clear Call
                             </Typography>
                             <Divider sx={{ mb: 3 }} />
 
