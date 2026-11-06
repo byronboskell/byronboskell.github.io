@@ -12,11 +12,9 @@ const LinkDropDown: React.FC<LinkDropDownProps> = ({
     links
 }) => {
 
-    // ...existing code...
     const { pathname } = useLocation();
     const [projectsAnchor, setProjectsAnchor] = useState<null | HTMLElement>(null);
     const projectsOpen = Boolean(projectsAnchor);
-    // ...existing code...
 
     return (
         <>
