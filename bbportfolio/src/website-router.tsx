@@ -2,12 +2,13 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import ErrorPage from "./pages/error-page";
 import HomePage from "./pages/home-page";
-import BlogPage from "./pages/blog-page";
 import ContactPage from "./pages/contact-page";
 import AboutPage from "./pages/about-page";
 import IllicPage from "./pages/illic-page";
 import AHPPage from "./pages/ahp-page";
 import ClearCallPage from "./pages/clear-call-page";
+import BlogEntryPage from "./pages/blog-entry-page";
+import BlogNavigationPage from "./pages/blog-navigation-page";
 
 
 
@@ -26,7 +27,12 @@ const WebsiteRouter = () => {
         },
         {
             path: "/blog",
-            element: <BlogPage />,
+            element: <BlogNavigationPage />,
+            errorElement: <ErrorPage />,
+        },
+        {
+            path: "/blog/:index",
+            element: <BlogEntryPage />,
             errorElement: <ErrorPage />,
         },
         {
