@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 import { Link } from "react-router-dom";
 
@@ -30,6 +30,22 @@ const IllicPage: React.FC = () => {
                             <Typography variant="h3" component="h1" gutterBottom>
                                 Lords of Illic
                             </Typography>
+
+                            <Box sx={{ width: "100%", aspectRatio: "16 / 9" }}>
+                                <Box
+                                    component="iframe"
+                                    src="https://www.youtube-nocookie.com/embed/7T5pznvKBfs"
+                                    title="Lords of Illic video"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                    sx={{
+                                        width: "100%",
+                                        height: "100%",
+                                        border: 0
+                                    }}
+                                />
+                            </Box>
+
                             <Typography variant="h6" component="p" color="text.secondary">
                                 A land of adventure awaits in the magical land of Illic. Follow the Prince's story as he goes from dreaming of being a strong king to making history. The Prince is not a fighter so he has to work with his allies to save everyone.
                             </Typography>
