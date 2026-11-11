@@ -101,12 +101,19 @@ const HomePage: React.FC = () => (
                                     During this project I had to transition my skills from Unity to full stack development making use of typescript, react and aws services.
                                 </Typography>
                             </Stack>
-                            <CardMedia
-                                component="img"
-                                height="220"
-                                image="./images/clear-call-logo.png"
-                                alt="Clear Call Image"
-                            />
+                            <Stack padding={1} sx={{ backgroundColor: "white" }}>
+                                <CardMedia
+                                    component="img"
+                                    height="220"
+                                    image="./images/clear-call-logo.png"
+                                    alt="Clear Call Image"
+                                    sx={{
+                                        width: "100%",
+                                        height: 220,
+                                        objectFit: "contain",
+                                    }}
+                                />
+                            </Stack>
                             <SiteNavigationButton
                                 link={{ to: "/projects/telehealth", label: "More Information" }}
                                 isActive={false}
@@ -117,7 +124,7 @@ const HomePage: React.FC = () => (
                 </Card>
             </Stack>
         </Stack>
-    </PageLayout>
+    </PageLayout >
 );
 
 export default HomePage;
