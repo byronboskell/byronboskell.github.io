@@ -1,14 +1,13 @@
-import { Box, Typography } from "@mui/material"
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import { blogData } from "../blog-content/blog-entries"
-import BlogEntry from "../components/blog-entry";
-import PageLayout from "../components/page-layout";
+import BlogEntryPage from "./blog-entry-page";
+import BlogNavigationPage from "./blog-navigation-page";
 
 const parseBlogNumber = (searchParams: string | null, max?: number): number => {
 
     if (!searchParams) {
-        return 0
+        return -1
     }
 
     const parsedNumber = Number.parseInt(searchParams)
@@ -18,42 +17,28 @@ const parseBlogNumber = (searchParams: string | null, max?: number): number => {
     }
 
     if (parsedNumber < 0) {
-        return 0
+        return -1
     }
 
     if (max && parsedNumber > max) {
-        return max
+        return -1
     }
 
     return parsedNumber
 }
 
 const BlogPage: React.FC = () => {
-
     const [searchParams] = useSearchParams();
     const [blogNumber] = React.useState<number>(parseBlogNumber(searchParams.get("index"), blogData.length))
-    //const [page] = React.useState<number>(parseBlogNumber(searchParams.get("page")))
 
-    const entry = blogData[blogNumber]
+    if (blogNumber > -1 && blogNumber < blogData.length) {
+        const entry = blogData[blogNumber]
+
+        return <BlogEntryPage entry={entry} />
+    }
 
     return (
-        <PageLayout>
-            <Box
-                className="homepage-container"
-                sx={{
-                    minHeight: "100vh",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "top",
-                }}
-            >
-                <Typography variant="h3">
-                    BB Blog
-                </Typography>
-                <BlogEntry entry={entry} />
-            </Box>
-        </PageLayout>
+        <BlogNavigationPage />
     )
 }
 
