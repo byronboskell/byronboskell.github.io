@@ -29,6 +29,12 @@ const InfoPanel: React.FC = () => (
                         </Typography>
                         <Typography>Looking for work</Typography>
                     </Box>
+                    <Box>
+                        <Typography variant="caption" color="text.secondary">
+                            Contact
+                        </Typography>
+                        <Typography>byronboskell@gmail.com</Typography>
+                    </Box>
                 </Stack>
             </CardContent>
         </Card>
