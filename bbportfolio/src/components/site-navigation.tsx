@@ -21,13 +21,10 @@ const links: LinkValues[][] = [
         { label: "Aboriginal Health Project", to: "/projects/ahp" },
     ],
     [
-        { label: "About", to: "/about" }
-    ],
-    [
         { label: "Blog", to: "/blog" }
     ],
     [
-        { label: "Contact", to: "/contact" }
+        { label: "About", to: "/about" }
     ],
 ];
 
