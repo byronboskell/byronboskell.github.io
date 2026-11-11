@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardContent, Stack, Typography } from "@mui/material";
+import { Button, Card, CardContent, CardMedia, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 import { Link } from "react-router-dom";
 
@@ -30,6 +30,16 @@ const AHPPage: React.FC = () => {
                             <Typography variant="h3" component="h1" gutterBottom>
                                 Aboriginal Health Project
                             </Typography>
+                            <CardMedia
+                                component="img"
+                                height="220"
+                                image={"./images/AHP.jpg"}
+                                alt={"AHP Image"}
+                                sx={{
+                                    width: "100%",
+                                    height: 220,
+                                }}
+                            />
                             <Typography variant="h6" component="p" color="text.secondary">
                                 A project to create a VR simulation which would train remote nurses to understand the warning signs of foot complications for aboriginal diabetic patients. The goal was to help reduce foot amputations by providing immersive training that could be brought to remote sites without the need for remote nurses to travel long distances.
                             </Typography>
