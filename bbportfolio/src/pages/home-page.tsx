@@ -1,8 +1,6 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Divider, Stack, Typography } from "@mui/material";
+import { Card, CardContent, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
-import SiteNavigationButton from "../components/site-navigation-button";
-import { Link } from "react-router-dom";
 import ProjectSummaryCard from "../components/project-summary-card";
 
 const HomePage: React.FC = () => (
