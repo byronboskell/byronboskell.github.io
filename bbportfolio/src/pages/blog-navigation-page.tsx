@@ -47,7 +47,7 @@ const BlogNavigationPage: React.FC = () => {
                         <Card
                             key={data.title}
                             component={Link}
-                            to={`${pathname.replace(/\/$/, "")}/${index}`}
+                            to={`${pathname.replace(/\/$/, "")}/${data.key}`}
                             variant="outlined"
                             sx={{
                                 color: "inherit",

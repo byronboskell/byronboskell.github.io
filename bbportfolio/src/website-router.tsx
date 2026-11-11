@@ -31,7 +31,7 @@ const WebsiteRouter = () => {
             errorElement: <ErrorPage />,
         },
         {
-            path: "/blog/:index",
+            path: "/blog/:key",
             element: <BlogEntryPage />,
             errorElement: <ErrorPage />,
         },

@@ -20,7 +20,7 @@ const BlogEntry: React.FC<BlogEntryProps> = ({
                         {entry?.date.toDateString() || "Unknown"}
                     </Typography>
                     <Typography variant="h2" component="h1" gutterBottom>
-                        {entry?.title || "Blog entry not found."}
+                        {entry?.title || "Unknown"}
                     </Typography>
                 </CardContent>
             </Card>
@@ -28,6 +28,9 @@ const BlogEntry: React.FC<BlogEntryProps> = ({
             <Card component="article" variant="outlined">
                 <CardContent sx={{ p: { xs: 3, md: 5 } }}>
                     {Content && <Content />}
+                    {!Content && <Typography >
+                        Content Not Found.
+                    </Typography>}
                 </CardContent>
             </Card>
         </Stack>

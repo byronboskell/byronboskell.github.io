@@ -6,14 +6,14 @@ import { Link, useParams } from "react-router-dom";
 import { blogData } from "../blog-content/blog-entries";
 
 const blogContents: Record<string, React.LazyExoticComponent<React.ComponentType>> = {
-    "0": React.lazy(() => import("../blog-content/entries/blog-0"))
+    "placeholder": React.lazy(() => import("../blog-content/entries/blog-0"))
 };
 
 const BlogPage: React.FC = () => {
 
-    const { index } = useParams();
-    const entry = index !== undefined ? blogData[Number(index)] : undefined;
-    const Content = index !== undefined ? blogContents[index] : undefined;
+    const { key } = useParams();
+    const entry = blogData.find((item) => item.key === key);
+    const Content = key ? blogContents[key] : undefined;
 
     if (!entry || !Content) {
         return (
