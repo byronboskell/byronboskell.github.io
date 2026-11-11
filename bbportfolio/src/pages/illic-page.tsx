@@ -49,6 +49,22 @@ const IllicPage: React.FC = () => {
                             <Typography variant="h6" component="p" color="text.secondary">
                                 A land of adventure awaits in the magical land of Illic. Follow the Prince's story as he goes from dreaming of being a strong king to making history. The Prince is not a fighter so he has to work with his allies to save everyone.
                             </Typography>
+                            <Button
+                                href="https://orangedrake.itch.io/lords-of-illic"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                variant="contained"
+                                sx={{
+                                    mt: 2,
+                                    px: 3,
+                                    py: 1.5,
+                                    borderRadius: 2,
+                                    textTransform: "none",
+                                    fontWeight: 700
+                                }}
+                            >
+                                Play Lords of Illic for free on itch.io →
+                            </Button>
                         </CardContent>
                     </Card>
                     <Card component="article" variant="outlined">
