@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Card, CardContent, CardMedia, Divider, Stack, Typography } from "@mui/material";
-import SiteNavigationButton from "./site-navigation-button";
 import { Link } from "react-router-dom";
 
 interface ProjectSummaryCardProps {
