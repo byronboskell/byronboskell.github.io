@@ -31,12 +31,6 @@ const links: LinkValues[][] = [
     ],
 ];
 
-const projectLinks: LinkValues[] = [
-    { label: "Lords of Illic", to: "/projects/illic" },
-    { label: "Aboriginal Health Project", to: "/projects/ahp" },
-    { label: "Clear Call", to: "/projects/telehealth" },
-];
-
 const SiteNavigation: React.FC = () => {
     const { pathname } = useLocation();
 
@@ -74,7 +68,7 @@ const SiteNavigation: React.FC = () => {
                             return <SiteNavigationButton link={subLinks[0]} isActive={isActive} />
                         }
 
-                        return <LinkDropDown links={projectLinks} />
+                        return <LinkDropDown links={subLinks} />
                     })}
 
                 </Box>
