@@ -24,6 +24,18 @@ const HomePage: React.FC = () => (
 
             <Stack spacing={2}>
                 <ProjectSummaryCard
+                    projectName={"Clear Call"}
+                    summary={[
+                        "A web-based telemedicine platform to improve outcomes for patients with diabetic foot complications.",
+                        "During this project I had to transition my skills from Unity to full stack development making use of typescript, react and aws services."
+                    ]}
+                    imageName={"./images/clear-call-logo.png"}
+                    link={"/projects/telehealth"}
+                    objectFit="contain"
+                    backgroundColor="white"
+                />
+
+                <ProjectSummaryCard
                     projectName={"Lords of Illic"}
                     summary={[
                         "An original game that I worked on for five years, alongside my studies, job searching and working at Insight via Artificial Intelligence.",
@@ -41,18 +53,6 @@ const HomePage: React.FC = () => (
                     ]}
                     imageName={"./images/AHP.jpg"}
                     link={"/projects/ahp"}
-                />
-
-                <ProjectSummaryCard
-                    projectName={"Clear Call"}
-                    summary={[
-                        "A web-based telemedicine platform to improve outcomes for patients with diabetic foot complications.",
-                        "During this project I had to transition my skills from Unity to full stack development making use of typescript, react and aws services."
-                    ]}
-                    imageName={"./images/clear-call-logo.png"}
-                    link={"/projects/telehealth"}
-                    objectFit="contain"
-                    backgroundColor="white"
                 />
             </Stack>
         </Stack>

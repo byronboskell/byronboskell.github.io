@@ -16,9 +16,9 @@ const links: LinkValues[][] = [
         { label: "Home", to: "/projects" }
     ],
     [
+        { label: "Clear Call", to: "/projects/telehealth" },
         { label: "Lords of Illic", to: "/projects/illic" },
         { label: "Aboriginal Health Project", to: "/projects/ahp" },
-        { label: "Clear Call", to: "/projects/telehealth" },
     ],
     [
         { label: "About", to: "/about" }
