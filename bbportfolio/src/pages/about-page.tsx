@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => (
                     <Typography variant="h2" component="h1" gutterBottom>
                         Byron Boskell
                     </Typography>
-                    <Typography variant="h5" component="p" color="text.secondary">
+                    <Typography variant="h5" component="p" >
                         Software Developer and Video Game Creator
                     </Typography>
                 </CardContent>
@@ -30,34 +30,54 @@ const AboutPage: React.FC = () => (
             >
                 <Card component="article" variant="outlined">
                     <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-                        <Typography variant="h4" component="h2" gutterBottom>
-                            My background
+                        <Typography variant="h5" component="h2" gutterBottom>
+                            Timeline:
                         </Typography>
-                        <Divider sx={{ mb: 3 }} />
 
+                        <Divider sx={{ mb: 3 }} />
                         <Stack spacing={2}>
-                            <Typography color="text.secondary">
-                                I earned an Advanced Diploma of Professional Game Development from
-                                the Academy of Interactive Entertainment in 2019.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                After that, I spent two years working on my own video game, Lords
-                                of Illic.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                I have worked at Insight via Artificial Intelligence (IVAI) for
-                                almost five years.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                Over the last few years, I have expanded my skills beyond game
-                                development, adapting to a range of platforms and programming
-                                languages.
-                            </Typography>
-                            <Typography color="text.secondary">
-                                My projects have helped me grow my software engineering skills.
-                                I have also spent time learning from books and videos to continue
-                                developing those skills.
-                            </Typography>
+                            <Stack>
+                                <Typography >
+                                    <b>2018:</b> Diploma of Professional Game Development
+                                    (Academy of Interactive Entertainment).
+                                </Typography>
+                                <Typography >
+                                    Learnt the basics of game programming and gained experience with group projects.
+                                </Typography>
+                            </Stack>
+                            <Stack>
+                                <Typography >
+                                    <b>2019:</b> Advanced Diploma of Professional Game Development from
+                                    the Academy of Interactive Entertainment.
+                                </Typography>
+                                <Typography >
+                                    Expanded my skills and worked on a six month group project, mimicking game studio environment.
+                                </Typography>
+                            </Stack>
+                            <Stack>
+                                <Typography >
+                                    <b>2020 - 2021:</b> Lords of Illic Development and job hunting
+                                </Typography>
+                                <Typography >
+                                    Used Lords of Illic as a platform to improve and gain experience for long term projects. (Development for lords of illic began in mid 2019 and finished in early 2025)
+                                </Typography>
+                            </Stack>
+                            <Stack>
+                                <Typography >
+                                    <b>2021 (December) - 2023:</b> VR Unity Developer at Insight via Artificial Intelligence (IVAI)
+                                </Typography>
+                                <Typography >
+                                    During the start the start of my working at IVAI I worked on Unity projects in VR.
+                                </Typography>
+                            </Stack>
+                            <Stack>
+                                <Typography >
+                                    <b>2023 - 2026 (October):</b> Software Developer at Insight via Artificial Intelligence (IVAI)
+                                </Typography>
+                                <Typography >
+                                    From 2023 I had to take on a variety of different projects including Full Stack Development and Android Development. I worked on a few smaller Unity projects during this time.
+                                </Typography>
+                            </Stack>
                         </Stack>
                     </CardContent>
                 </Card>
@@ -65,7 +85,7 @@ const AboutPage: React.FC = () => (
                 <InfoPanel />
             </Box>
         </Stack>
-    </PageLayout>
+    </PageLayout >
 );
 
 export default AboutPage;
