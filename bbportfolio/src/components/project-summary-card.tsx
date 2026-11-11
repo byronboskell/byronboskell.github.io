@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Divider, Stack, Typography } from "@mui/material";
+import { Button, Card, CardContent, CardMedia, Divider, Stack, Typography } from "@mui/material";
 import SiteNavigationButton from "./site-navigation-button";
 import { Link } from "react-router-dom";
 
@@ -50,11 +50,20 @@ const ProjectSummaryCard: React.FC<ProjectSummaryCardProps> = ({
                         />
                     </Stack>
                 </Link>
-                <SiteNavigationButton
-                    link={{ to: link, label: "More Information" }}
-                    isActive={false}
-                    variant="outlined"
-                />
+                <Stack direction={"row"}>
+                    <Button
+                        key={link}
+                        component={Link}
+                        to={link}
+                        color="inherit"
+                        variant="text"
+                        sx={{
+                            width: "fitContent"
+                        }}
+                    >
+                        More Information →
+                    </Button>
+                </Stack>
             </Stack>
         </CardContent>
     </Card>
