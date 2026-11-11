@@ -17,6 +17,9 @@ const AboutPage: React.FC = () => (
                     <Typography variant="h5" component="p" >
                         Software Developer and Video Game Creator
                     </Typography>
+                    <Typography component="p" >
+                        Software Development is about solving problems with code. The core principles are the same in serious Software Development or Video Game Creation. I am always looking for ways to improve and I hope to encounter more interesting problems whether it is in field of Game Development or more serious software.
+                    </Typography>
                 </CardContent>
             </Card>
 
