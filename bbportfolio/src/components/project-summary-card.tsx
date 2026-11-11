@@ -1,0 +1,63 @@
+import React from "react";
+import { Card, CardContent, CardMedia, Divider, Stack, Typography } from "@mui/material";
+import SiteNavigationButton from "./site-navigation-button";
+import { Link } from "react-router-dom";
+
+interface ProjectSummaryCardProps {
+    projectName: string,
+    summary: string[],
+    imageName: string,
+    link: string,
+    backgroundColor?: string
+    objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down"
+}
+
+const ProjectSummaryCard: React.FC<ProjectSummaryCardProps> = ({
+    projectName,
+    summary,
+    imageName,
+    link,
+    backgroundColor,
+    objectFit,
+}) => (
+    <Card component="article" variant="outlined">
+        <CardContent sx={{ p: { xs: 3, md: 4 } }}>
+            <Typography variant="h4" component="h2" gutterBottom>
+                {projectName}
+            </Typography>
+            <Divider sx={{ mb: 3 }} />
+
+            <Stack spacing={2}>
+                <Stack>
+                    {summary.map(text =>
+                        <Typography color="text.secondary">
+                            {text}
+                        </Typography>
+                    )}
+                </Stack>
+                <Link to={link} style={{ display: "block" }}>
+                    <Stack padding={1} sx={{ backgroundColor }}>
+                        <CardMedia
+                            component="img"
+                            height="220"
+                            image={imageName}
+                            alt={`${projectName} Image`}
+                            sx={{
+                                width: "100%",
+                                height: 220,
+                                objectFit: objectFit,
+                            }}
+                        />
+                    </Stack>
+                </Link>
+                <SiteNavigationButton
+                    link={{ to: link, label: "More Information" }}
+                    isActive={false}
+                    variant="outlined"
+                />
+            </Stack>
+        </CardContent>
+    </Card>
+);
+
+export default ProjectSummaryCard;
