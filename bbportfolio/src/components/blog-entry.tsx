@@ -1,14 +1,14 @@
 import React from "react";
-import { type BlogEntryData } from "../blog-content/blog-entries";
+import { type BlogEntryData as BlogSummaryData } from "../blog-content/blog-entries";
 import { Card, CardContent, Stack, Typography } from "@mui/material";
 
 interface BlogEntryProps {
-    entry?: BlogEntryData | undefined;
+    summary?: BlogSummaryData | undefined;
     Content?: React.ComponentType | undefined;
 }
 
 const BlogEntry: React.FC<BlogEntryProps> = ({
-    entry,
+    summary: entry,
     Content
 }) => {
 

@@ -6,16 +6,16 @@ import { Link, useParams } from "react-router-dom";
 import { blogData } from "../blog-content/blog-entries";
 
 const blogContents: Record<string, React.LazyExoticComponent<React.ComponentType>> = {
-    "placeholder": React.lazy(() => import("../blog-content/entries/blog-0"))
+    "books": React.lazy(() => import("../blog-content/entries/blog-0"))
 };
 
 const BlogPage: React.FC = () => {
 
     const { key } = useParams();
-    const entry = blogData.find((item) => item.key === key);
+    const summary = blogData.find((item) => item.key === key);
     const Content = key ? blogContents[key] : undefined;
 
-    if (!entry || !Content) {
+    if (!summary || !Content) {
         return (
             <PageLayout>
                 <Stack spacing={2}>
@@ -58,7 +58,7 @@ const BlogPage: React.FC = () => {
 
 
                 <Suspense fallback={<Typography>Loading entry...</Typography>}>
-                    <BlogEntry entry={entry} Content={Content} />
+                    <BlogEntry summary={summary} Content={Content} />
                 </Suspense>
             </Stack>
         </PageLayout>
