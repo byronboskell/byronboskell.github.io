@@ -81,19 +81,35 @@ const ClearCallPage: React.FC = () => {
                                         We tried two headsets the Vuzix and the Realware and settled with the Realware.
                                     </Typography>
                                     <Typography variant="h6" component="p" color="text.secondary">
-                                        As we pivoted to AWS services we focused our energy on discovering what was actually needed by the telemedicine team - something that is often overlooked when making software.
-                                        A teams or zoom call for instance is designed for a number of people sitting in normal chairs around a table - not patients sitting on specialised podiatrist chair.
-                                        We came up with a whole set of hardware to provide reliable sound and video while also working on creating a simple and easy to use webportal for managing consults, with specialised video call views for different users.
+                                        Up to this point I had primarily been working with C# and Unity (and some C++ when I was studying).
+                                        Typescript is a very different language to C# and React is a very different framework than Unity.
+                                        But that was only the Frontend, I also had to create a Backend services and work with deployment scripts.
+                                        While I had spent a couple months before with an online AWS course, it was a very different matter to translate those skills into a working telemedicine platform.
+                                        I was not the only person working on the project, but I was the only person working full time on it, so I need to acquire skills quickly.
+                                        What really helped was an example repository with CDK for a few simple API gateway routes and React Code for a call page.
+                                        I used that to get a proof of concept and then worked to unpack the different technologies I needed.
                                     </Typography>
                                     <Typography variant="h6" component="p" color="text.secondary">
-                                        Even though we were forced to give up AR capabilities, we still managed to offer power extra capabilities.
+                                        Another key part of the project was finding solutions to the root problems for the telemedicine team.
+                                        We had initially want to have a lot of AR features to assist the end user, but what the teams needed the most better audio and video.
+                                        A in a Teams or Zoom call for instance is designed for a number of people sitting in normal chairs around a table - not patients sitting on specialised podiatrist chair.
+                                        We sourced cameras that would allow the nurse and the patient to be seen properly and microphones which would allow the nurse and the patient to be heard correctly.
+                                        We combined this with the headset to allow the podiatrists at the hospital to be able to get a good look at the patient's feet.
+                                        Just the hardware was enough to improve the quality of the consults, but of course we still needed to provide better software as well.
+                                    </Typography>
+                                    <Typography variant="h6" component="p" color="text.secondary">
+                                        We created a simple and easy to use webportal for managing consults.
+                                        We tailored different call views for different participants in the call.
+                                        Even without AR capabilities, we still offer extra helping features in the call.
+                                        We have a simple way of sending photos taken with the Realware headset (or mobile device). A way to annotate those pictures within the call.
                                         My coworker developed an application which uses a 3d camera to capture images of foot wounds, which can then be transmitted to clinicians in the hospital who can use it to take measurements of wounds.
                                         Since the models are saved we can compare the wounds to help decide if they are healing.
+                                        Clear call has already been used by patients and is helping them get better health outcomes.
                                     </Typography>
                                 </Stack>
                                 <Stack spacing={2}>
                                     <Typography variant="h6" component="p" color="text.secondary">
-                                        Clear call has already been used by patients and is helping them get better health outcomes.
+                                        There is a lot more to this project and through it I have changed from a Unity Developer into filling the role of a Software Engineer (though I do not have a formal degree).
                                     </Typography>
                                 </Stack>
                             </Stack>
