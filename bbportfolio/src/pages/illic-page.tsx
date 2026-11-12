@@ -71,22 +71,58 @@ const IllicPage: React.FC = () => {
                         <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                             <Stack spacing={2}>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    Lords of Illic was a project that spanned five years. When it started I was new to Unity and still studying for my degree. I worked on it during my major production (a six month video game project in a team) alongside which I also took on an VR internship with SA Power Networks.
+                                    As a child I played Pikmin, Legend of Zelda and Pokemon series.
+                                    But I didn't want to just play them, I wanted to expand them myself.
+                                    So I would sit with my brothers and draw my own levels. That was when I first wanted to make video games.
+                                    After many twists and turns I ended up studying at the Academy of Interactive Entertainment.
+                                    I was interested in the art course and game design course, but I choose the programming course.
+                                    I wanted understand how the games really worked.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    I continued to work on it as I searched for a job. Making sure to put in normal work hours so I could continue to learn even without employment.
+                                    I knew that I would enjoy making games, but what I didn't realise is that by picking by picking programming I would be opening a whole new world for me.
+                                    I had been allowed to start my programming course late, but I quickly caught up and as I did I started to think about what game I wanted to make for myself.
+                                    I decided that I wanted to make a game similar to the Fire Emblem series.
+                                    It was not one of the original series that sparked my interest but I figured that since it was like a very advanced game of chess, I would be able to manage making everything myself.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    Part of what helped me get my job at Insight via Artificial Intelligence was the fact I had automated testing in the project.
+                                    So as I went through my assignments I started to think, how could this apply to the game I wanted to make?
+                                    I didn't hesitate to put in the effort as I knew it would come in handy later for Lords of Illic.
+                                    By the second year of my course I couldn't help but start making the game.
+                                    It was the start of a five year long project and an obsession with software development.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    When I got my job at Insight via Artificial Intelligence and started working on the Aboriginal Health Project, the need for good testing increased and between the two projects I expanded my abilities to create tests.
+                                    I worked on it during my major production (a six month video game project in a team) alongside which I also took on an VR internship with SA Power Networks.
+                                    I continued to work on it as I searched for a job.
+                                    Making sure to put in normal work hours so I could continue to learn even without employment.
+                                    At times it seemed pointless, but as I continued to work on the game I continued to improve.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    Over the course of implementing testing into Lords of Illic I overhauled the entire game as my understanding increased.
+                                    It was during this time that I first got an inkling that testing was important.
+                                    So I decided to implement tests where the computer would play levels automatically.
+                                    This experience was one of the things that impressed impressed my future employers at IVAI
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    Making Lords of Illic was not a simple hobby project where I glued together some code without thought, it provided me with a set of problems that helped me learn software design and helped me adapt as my role at Insight via Artificial Intelligence expanded over time.
+                                    My first project at IVAI was the <Link to="/projects/ahp">Aboriginal Health Project</Link>.
+                                    I would work five days a week, learning new things about Unity that I was desperate to implement in Lords of Illic.
+                                    Trying different things in that context would help me find ways to improve the VR simulation.
+                                    But I quickly got to a point which I couldn't ignore.
+                                    One of the last things I did in Lords of Illic before I started my job was to switch to the new input system.
+                                    This required quite a bit of refactoring, but all I had were my level tests. They were useful but they still took several minutes to run.
+                                    I no longer had all week to work on the project. So I need better ways to make progress and to ways to prevent the frustration of glitches found at 6pm on a Sunday night.
+                                </Typography>
+                                <Typography variant="h6" component="p" color="text.secondary">
+                                    My boss suggested that I read <Link to="https://play.google.com/store/books/details/Robert_C_Martin_Clean_Code?id=_i6bDeoCQzsC">.Clean Code</Link> by Robert Martin.
+                                    That was just the first of many books I read. I felt like I needed to know more and get better and better.
+                                </Typography>
+                                <Typography variant="h6" component="p" color="text.secondary">
+                                    The need for testing revealed the faults in my architecture, to the point where I overhauled the entire game multiple times as my understanding increased.
+                                    Even as the needs of my job increased as I need to learn the HoloLens and then full stack development I kept working on Lords of Illic.
+                                    During my time working on Clear Call I even took the game to a local video game convention called Avcon as an Indie Developer.
+                                    As the fifth year of developer approached I decided I wouldn't try to monetise the game, instead I polished it and uploaded the full game to itch.io.
+                                </Typography>
+                                <Typography variant="h6" component="p" color="text.secondary">
+                                    Making Lords of Illic was not about making money. It was about learning and expanding myself.
+                                    It was not a simple hobby project where I glued together some code without thought, it provided me with a set of problems that helped me learn software design and helped me adapt as my role at IVAI expanded over time.
                                 </Typography>
                             </Stack>
                         </CardContent>
