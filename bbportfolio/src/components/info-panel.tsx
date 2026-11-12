@@ -19,15 +19,15 @@ const InfoPanel: React.FC = () => (
                     </Box>
                     <Box>
                         <Typography variant="caption" color="text.secondary">
-                            Interests
+                            Programming Languages and Frameworks:
                         </Typography>
-                        <Typography>Software development and video games</Typography>
-                    </Box>
-                    <Box>
-                        <Typography variant="caption" color="text.secondary">
-                            Current role
+                        <Typography>C# and Unity (5+ years)</Typography>
+                        <Typography>Typescript with React and AWS (4+ years)</Typography>
+                        <Typography>Kotlin (6 month project with Android Studio)</Typography>
+                        <Typography>
+                            AWS Serverless - CDK, DynamoDB, Lambda, API Gateway and S3 (4+ years)
                         </Typography>
-                        <Typography>Looking for work</Typography>
+                        <Typography>C++ (4 month project with Unreal Engine)</Typography>
                     </Box>
                     <Box>
                         <Typography variant="caption" color="text.secondary">

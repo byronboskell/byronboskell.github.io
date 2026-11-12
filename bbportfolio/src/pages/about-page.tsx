@@ -50,8 +50,8 @@ const AboutPage: React.FC = () => (
                             </Stack>
                             <Stack>
                                 <Typography >
-                                    <b>2019:</b> Advanced Diploma of Professional Game Development from
-                                    the Academy of Interactive Entertainment.
+                                    <b>2019:</b> Advanced Diploma of Professional Game Development
+                                    (Academy of Interactive Entertainment).
                                 </Typography>
                                 <Typography >
                                     Expanded my skills and worked on a six month group project, mimicking game studio environment.
