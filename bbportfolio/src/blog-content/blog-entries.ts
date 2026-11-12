@@ -9,6 +9,6 @@ export interface BlogEntryData {
 export const blogData: BlogEntryData[] = [{
     key: "books",
     date: new Date(2026, 11, 13),
-    title: "Books I've read.",
+    title: "Software Engineering Books I've read.",
     summary: "Interesting Software Engineering books I have read and learnt from.",
 }]
