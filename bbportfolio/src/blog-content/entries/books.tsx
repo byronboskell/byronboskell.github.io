@@ -7,7 +7,7 @@ export default function Blog0Content() {
             <Typography>
                 You can find a lot of content about software engineering online.
                 But one big advantage of an actual book is that the author had to go to trouble of organising their thoughts, editing, getting test readers and getting the book published.
-                Here are some books I have read and my thoughts about them.
+                Here are some books that have left an impact on me.
             </Typography>
             <Stack spacing={2}>
                 <Stack>
