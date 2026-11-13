@@ -80,6 +80,21 @@ export default function Blog0Content() {
             <Stack spacing={2}>
                 <Stack>
                     <Typography variant="h6">
+                        Domain-Driven Design by Eric Evans
+                    </Typography>
+                    <Typography>
+                        <Link to="https://play.google.com/store/books/details/Eric_Evans_Domain_Driven_Design?id=hHBf4YxMnWMC">Ebook Link</Link>
+                    </Typography>
+                </Stack>
+                <Typography>
+                    This is an incredibly important book that has really shaped my thinking on software design.
+                    It talks about the split between the problem that is being solved and the technology that we is used to solve it.
+                    Everyone who makes software needs the information in this book.
+                </Typography>
+            </Stack>
+            <Stack spacing={2}>
+                <Stack>
+                    <Typography variant="h6">
                         The Pragmatic Programmer by David Thomas and Andrew Hunt
                     </Typography>
                 </Stack>
