@@ -43,7 +43,7 @@ const BlogNavigationPage: React.FC = () => {
                     </CardContent>
                 </Card>
                 <Stack spacing={1.5}>
-                    {blogData.map((data, index) => (
+                    {blogData.map((data) => (
                         <Card
                             key={data.key}
                             component={Link}
