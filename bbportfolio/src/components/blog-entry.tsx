@@ -19,7 +19,7 @@ const BlogEntry: React.FC<BlogEntryProps> = ({
                     <Typography variant="overline" color="primary">
                         {entry?.date.toDateString() || "Unknown"}
                     </Typography>
-                    <Typography variant="h2" component="h1" gutterBottom>
+                    <Typography variant="h4" component="h1" gutterBottom>
                         {entry?.title || "Unknown"}
                     </Typography>
                 </CardContent>
