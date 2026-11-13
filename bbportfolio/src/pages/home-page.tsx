@@ -30,6 +30,7 @@ const HomePage: React.FC = () => (
                     imageName={"./images/clear-call.png"}
                     link={"/projects/telehealth"}
                     objectFit="cover"
+                    objectPosition="50% 35%"
                 />
 
                 <ProjectSummaryCard

@@ -8,7 +8,8 @@ interface ProjectSummaryCardProps {
     imageName: string,
     link: string,
     backgroundColor?: string
-    objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down"
+    objectFit?: "fill" | "contain" | "cover" | "none" | "scale-down",
+    objectPosition?: string
 }
 
 const ProjectSummaryCard: React.FC<ProjectSummaryCardProps> = ({
@@ -18,6 +19,7 @@ const ProjectSummaryCard: React.FC<ProjectSummaryCardProps> = ({
     link,
     backgroundColor,
     objectFit,
+    objectPosition,
 }) => (
     <Card component="article" variant="outlined">
         <CardContent sx={{ p: { xs: 3, md: 4 } }}>
@@ -44,7 +46,8 @@ const ProjectSummaryCard: React.FC<ProjectSummaryCardProps> = ({
                             sx={{
                                 width: "100%",
                                 height: 220,
-                                objectFit: objectFit,
+                                objectFit,
+                                objectPosition,
                             }}
                         />
                     </Stack>
