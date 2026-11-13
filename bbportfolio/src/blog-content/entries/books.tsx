@@ -36,7 +36,7 @@ export default function Blog0Content() {
                         The Software Architect Elevator by Gregor Hohpe
                     </Typography>
                     <Typography>
-                        Ebook Link: <Link to="https://play.google.com/store/books/details/Gregor_Hohpe_The_Software_Architect_Elevator?id=Z0bcDwAAQBAJ">The Software Architect Elevator</Link>
+                        <Link to="https://play.google.com/store/books/details/Gregor_Hohpe_The_Software_Architect_Elevator?id=Z0bcDwAAQBAJ">Ebook Link</Link>
                     </Typography>
                 </Stack>
                 <Typography>
@@ -46,6 +46,21 @@ export default function Blog0Content() {
                     He talks about how a software architect needs to look at different levels of abstraction depending on what part of the organisation they are working with.
                     Full of great insights that encourage to consider your perspective when looking at different problems in software engineering.
                     I also recommend reading his <Link to="https://architectelevator.com/blog/">blog</Link> which is incredibly insightful.
+                </Typography>
+            </Stack>
+            <Stack spacing={2}>
+                <Stack>
+                    <Typography variant="h6">
+                        Extreme Programming Explained by Kent Beck
+                    </Typography>
+                    <Typography>
+                        <Link to="https://play.google.com/store/books/details/Kent_Beck_Extreme_Programming_Explained?id=-DNcBAAAQBAJ">Ebook Link</Link>
+                    </Typography>
+                </Stack>
+                <Typography>
+                    Kent Beck's Extreme Programming Explained is a historic book as it was one of the first books to codify test driven development.
+                    I read the revised edition, which has updated examples and corrections based on years of extra experience.
+                    A must read book.
                 </Typography>
             </Stack>
             <Stack spacing={2}>
