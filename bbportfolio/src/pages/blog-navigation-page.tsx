@@ -45,7 +45,7 @@ const BlogNavigationPage: React.FC = () => {
                 <Stack spacing={1.5}>
                     {blogData.map((data, index) => (
                         <Card
-                            key={data.title}
+                            key={data.key}
                             component={Link}
                             to={`${pathname.replace(/\/$/, "")}/${data.key}`}
                             variant="outlined"
@@ -61,7 +61,7 @@ const BlogNavigationPage: React.FC = () => {
                         >
                             <CardContent sx={{ p: 2.5, "&:last-child": { pb: 2.5 } }}>
                                 <Typography variant="overline" color="primary">
-                                    Entry {String(index + 1).padStart(2, "0")}
+                                    {data.date.toDateString()}
                                 </Typography>
                                 <Typography variant="h6" component="h2">
                                     {data.title}
