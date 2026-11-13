@@ -51,6 +51,20 @@ export default function Blog0Content() {
             <Stack spacing={2}>
                 <Stack>
                     <Typography variant="h6">
+                        Modern Software Engineering by Dave Farley
+                    </Typography>
+                    <Typography>
+                        <Link to="https://www.amazon.com.au/dp/0137314914/?bestFormat=true&k=modern%20software%20engineering&ref_=nb_sb_ss_w_scx-ent-bk-ww_k0_1_16_de&crid=2IYDI4UORVC0V&sprefix=modern%20software%20">Ebook Link</Link>
+                    </Typography>
+                </Stack>
+                <Typography>
+                    Dave Farley is a very knowledgeable about test driven development and software engineering.
+                    Modern Software Engineering is a crystallisation of the wisdom on his <Link to="https://www.youtube.com/@ModernSoftwareEngineeringYT">youtube channel</Link>.
+                </Typography>
+            </Stack>
+            <Stack spacing={2}>
+                <Stack>
+                    <Typography variant="h6">
                         Extreme Programming Explained by Kent Beck
                     </Typography>
                     <Typography>
@@ -66,7 +80,7 @@ export default function Blog0Content() {
             <Stack spacing={2}>
                 <Stack>
                     <Typography variant="h6">
-                        The Pragmatic Programmer
+                        The Pragmatic Programmer by David Thomas and Andrew Hunt
                     </Typography>
                 </Stack>
                 <Typography>
