@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import PageLayout from "../components/page-layout";
 import InfoPanel from "../components/info-panel";
+import { Link } from "react-router-dom";
 
 const AboutPage: React.FC = () => (
     <PageLayout>
@@ -44,8 +45,7 @@ const AboutPage: React.FC = () => (
                         <Stack spacing={2}>
                             <Stack>
                                 <Typography >
-                                    <b>2018:</b> Diploma of Professional Game Development
-                                    (Academy of Interactive Entertainment).
+                                    <b>2018:</b> Diploma of Professional Game Development <Link to="https://aie.edu.au/">(Academy of Interactive Entertainment)</Link>
                                 </Typography>
                                 <Typography >
                                     Learnt the basics of game programming and gained experience with group projects.
@@ -53,8 +53,7 @@ const AboutPage: React.FC = () => (
                             </Stack>
                             <Stack>
                                 <Typography >
-                                    <b>2019:</b> Advanced Diploma of Professional Game Development
-                                    (Academy of Interactive Entertainment).
+                                    <b>2019:</b> Advanced Diploma of Professional Game Development <Link to="https://aie.edu.au/">(Academy of Interactive Entertainment)</Link>
                                 </Typography>
                                 <Typography >
                                     Expanded my skills and worked on a six month group project, mimicking game studio environment.
@@ -70,7 +69,7 @@ const AboutPage: React.FC = () => (
                             </Stack>
                             <Stack>
                                 <Typography >
-                                    <b>2021 (December) - 2023:</b> VR Unity Developer at Insight via Artificial Intelligence (IVAI)
+                                    <b>2021 (December) - 2023:</b> VR Unity Developer at <Link to="https://www.ivai.com.au/">Insight via Artificial Intelligence</Link> (IVAI)
                                 </Typography>
                                 <Typography >
                                     During the start the start of my working at IVAI I worked on Unity projects in VR.
