@@ -115,7 +115,7 @@ const IllicPage: React.FC = () => {
                                     I no longer had all week to work on the project. So I need better ways to make progress and to ways to prevent the frustration of glitches found at 6pm on a Sunday night.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
-                                    My boss suggested that I read <Link to="https://play.google.com/store/books/details/Robert_C_Martin_Clean_Code?id=_i6bDeoCQzsC">.Clean Code</Link> by Robert Martin.
+                                    My boss suggested that I read <Link to="https://play.google.com/store/books/details/Robert_C_Martin_Clean_Code?id=_i6bDeoCQzsC">Clean Code</Link> by Robert Martin.
                                     That was just the first of many books I read. I felt like I needed to know more and get better and better.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
