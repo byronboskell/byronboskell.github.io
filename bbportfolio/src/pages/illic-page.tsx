@@ -116,7 +116,7 @@ const IllicPage: React.FC = () => {
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
                                     My boss suggested that I read <Link to="https://play.google.com/store/books/details/Robert_C_Martin_Clean_Code?id=_i6bDeoCQzsC">Clean Code</Link> by Robert Martin.
-                                    That was just the first of many books I read. I felt like I needed to know more and get better and better.
+                                    That was just the first of <Link to="/blog/books">many books I read</Link>. I felt like I needed to know more and get better and better.
                                 </Typography>
                                 <Typography variant="h6" component="p" color="text.secondary">
                                     The need for testing revealed the faults in my architecture, to the point where I overhauled the entire game multiple times as my understanding increased.
