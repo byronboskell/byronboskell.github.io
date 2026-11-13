@@ -27,28 +27,25 @@ const ClearCallPage: React.FC = () => {
                             <Typography variant="overline" color="primary">
                                 Telemedicine Platform
                             </Typography>
-                            {/* <Typography variant="h3" component="h1" gutterBottom>
+                            <Typography variant="h3" component="h1" gutterBottom>
                                 Clear Call
-                            </Typography> */}
+                            </Typography>
                             <Stack sx={{ paddingTop: 1, paddingBottom: 1 }}>
-                                <Stack sx={{ backgroundColor: "white" }} padding={1}>
-                                    <CardMedia
-                                        component="img"
-                                        height="220"
-                                        image={"./images/clear-call-logo.png"}
-                                        alt={"Clear Call Image"}
-                                        sx={{
-                                            width: "100%",
-                                            height: 220,
-                                            objectFit: "contain"
-                                        }}
-                                    />
-                                </Stack>
+                                <CardMedia
+                                    component="img"
+                                    image={"./images/clear-call.png"}
+                                    alt={"Clear Call Image"}
+                                    sx={{
+                                        width: "50%",
+                                        objectFit: "contain"
+                                    }} />
                             </Stack>
                             <Typography variant="h6" component="p" color="text.secondary">
                                 A telehealth platform designed to improve outcomes for remote patients with diabetic foot complications. The goal was to allow a remote doctor to see through the eyes of the nurse to improve communication and help diagnosis.
                             </Typography>
-
+                            <Typography variant="h6" component="p" color="text.secondary">
+                                <Link to="https://clearcall.au/about">More information here</Link>
+                            </Typography>
                         </CardContent>
                     </Card>
                     <Card component="article" variant="outlined">
